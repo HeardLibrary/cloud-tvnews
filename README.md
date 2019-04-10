@@ -4,3 +4,23 @@ The goal of this project is to build a data pipeline for the Vanderbilt Televisi
 ## Documentation
 
 The documentation for Cloud TV News is maintained on a [Github Wiki](https://github.com/HeardLibrary/cloud-tvnews/wiki).
+
+
+## Repo structure
+
+```
+├── README.md                  : Description of this repository
+├── iamRoles.md                : list of potentially reusable IAM permissions roles
+├── LICENSE                    : GNU General Public License v3.0 for repo
+│
+├── lambdas                    : scripts for current projects
+│   ├──                        : 
+│   │
+│   └── zips                   : directory for zipped lambda packages ready for CLI upload
+│ 
+├── stateMachines              : Amazon State Language (ASL) code describing state machines
+    └── serverlessApp.json     : state machine for overall workflow
+```
+
+----
+Revised 2019-04-10

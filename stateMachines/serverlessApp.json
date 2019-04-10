@@ -1,0 +1,15 @@
+{
+  "StartAt": "initialize",
+  "States": {
+    "initialize": {
+      "Type": "Pass",
+      "Result": "starting",
+      "Next": "finish"
+    },
+    "finish": {
+      "Type": "Pass",
+      "Result": "ending",
+      "End": true
+    }
+  }
+}
