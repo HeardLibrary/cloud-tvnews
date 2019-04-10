@@ -18,7 +18,7 @@ The documentation for Cloud TV News is maintained on a [Github Wiki](https://git
 │   │
 │   └── zips                   : directory for zipped lambda packages ready for CLI upload
 │ 
-├── stateMachines              : Amazon State Language (ASL) code describing state machines
+└── stateMachines              : Amazon State Language (ASL) code describing state machines
     └── serverlessApp.json     : state machine for overall workflow
 ```
 

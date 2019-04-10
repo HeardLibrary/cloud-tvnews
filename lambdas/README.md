@@ -7,8 +7,8 @@ The lambda name is the label for AWS.  The handler is the concatenation of the f
 When code is ready for deployment, it should be packaged into a `.zip` file in the `zips` subdirectory of this one.
 
 | ARN | version label | lambda name | handler | state label | notes |
-|---|---|---|---|---|---|---|
-| | | | | | | |
+|---|---|---|---|---|---|
+| | | | | | |
 
 ----
 Revised 2019-04-10
