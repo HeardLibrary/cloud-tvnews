@@ -11,7 +11,7 @@ import datetime as dt
 from io import StringIO
 import time
 
-mediaconvert_client = boto3.client('mediaconvert', endpoint_url='https://excqsnx7a.mediaconvert.us-east-1.amazonaws.com')
+mediaconvert_client = boto3.client('mediaconvert', endpoint_url='https://{account}.mediaconvert.us-east-1.amazonaws.com')
 s3 = boto3.client('s3')
 settings = {} #starts with an empty dict, will be filled with all the settings from the metadata.xml file.
 
