@@ -1,0 +1,22 @@
+{
+    "Comment": "Data enters as cleaned-up transcript data. Presumably, previously completed tags/concepts were saved. At the end, data are in the end user website/API.",
+    "StartAt": "replaceDirtyTranscriptWithClean",
+    "States": {
+      "replaceDirtyTranscriptWithClean": {
+          "Type": "Task",
+          "Resource": "arn:aws:lambda:us-east-1:022001073478:function:stateMachinePlaceholder",
+          "ResultPath": "$",
+          "Next": "moveDataToEnduserSystem"
+          },
+      "moveDataToEnduserSystem": {
+          "Type": "Pass",
+          "ResultPath": "$",
+          "Next": "packageForTransferToPartners"
+          },
+      "packageForTransferToPartners": {
+          "Type": "Pass",
+          "ResultPath": "$",
+          "End": true
+          }
+      }
+  }

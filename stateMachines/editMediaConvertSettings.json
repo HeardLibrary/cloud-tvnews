@@ -1,0 +1,11 @@
+{
+    "Comment": "User interaction generates the input data (web form, manual JSON editing). These data are merged with the fixed configuration data and saved as the JSON file that goes into MediaConvert",
+    "StartAt": "mergeToMediaConvertJson",
+    "States": {
+      "mergeToMediaConvertJson": {
+          "Type": "Pass",
+          "ResultPath": "$",
+          "End": true
+          }
+      }
+  }
