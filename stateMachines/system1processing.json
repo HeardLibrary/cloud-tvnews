@@ -1,0 +1,22 @@
+{
+    "Comment": "Includes processing from Snapstream output to output of data to be segmented",
+    "StartAt": "processSnapstreamData",
+    "States": {
+      "processSnapstreamData": {
+          "Type": "Task",
+          "Resource": "arn:aws:lambda:us-east-1:022001073478:function:stateMachinePlaceholder",
+          "ResultPath": "$",
+          "Next": "mediaConvert"
+          },
+      "mediaConvert": {
+          "Type": "Pass",
+          "ResultPath": "$",
+          "Next": "prepareForSegmentation"
+          },
+      "prepareForSegmentation": {
+          "Type": "Pass",
+          "ResultPath": "$",
+          "End": true
+          }
+      }
+  }

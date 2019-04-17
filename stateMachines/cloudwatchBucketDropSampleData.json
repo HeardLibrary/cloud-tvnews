@@ -1,0 +1,69 @@
+{
+  "version": "0",
+  "id": "de3c3d6c-2b6a-82ea-b016-4c4354d2ce47",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "account": "022001073478",
+  "time": "2019-04-17T17:02:17Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.05",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDAQKH25XVDFQXYVTV6U",
+      "arn": "arn:aws:iam::022001073478:user/stateMachineUser",
+      "accountId": "022001073478",
+      "accessKeyId": "ASIAQKH25XVDKS4ONLWT",
+      "userName": "stateMachineUser",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2019-04-17T15:38:57Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "eventTime": "2019-04-17T17:02:17Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "PutObject",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "129.59.122.107",
+    "userAgent": "[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36]",
+    "requestParameters": {
+      "X-Amz-Date": "20190417T170216Z",
+      "bucketName": "vu-tvnews-cbs",
+      "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+      "x-amz-acl": "private",
+      "X-Amz-SignedHeaders": "content-md5;content-type;host;x-amz-acl;x-amz-storage-class",
+      "Host": "s3.amazonaws.com",
+      "X-Amz-Expires": "299",
+      "key": "vocabulary.png",
+      "x-amz-storage-class": "STANDARD"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "SignatureVersion": "SigV4",
+      "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "bytesTransferredIn": 30288,
+      "AuthenticationMethod": "QueryString",
+      "x-amz-id-2": "Mg3fWmHiCurpXiAOgYmnaUdsLK/881fsGXoVrqBiW8A29kyU2gZp//0kU2JNI3Xr7fW4Y0vME3I=",
+      "bytesTransferredOut": 0
+    },
+    "requestID": "E731AE37AA344C45",
+    "eventID": "c21c59c1-7191-4285-b86b-6867858391d5",
+    "readOnly": false,
+    "resources": [
+      {
+        "type": "AWS::S3::Object",
+        "ARN": "arn:aws:s3:::vu-tvnews-cbs/vocabulary.png"
+      },
+      {
+        "accountId": "022001073478",
+        "type": "AWS::S3::Bucket",
+        "ARN": "arn:aws:s3:::vu-tvnews-cbs"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "022001073478"
+  }
+}
