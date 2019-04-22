@@ -40,7 +40,7 @@ The situation with roles is similar in that they can be created online or by CLI
 
 ## IAM role records
 
-Roles that have been created that might be reused should be recorded in [the iamRoldes.md](https://github.com/HeardLibrary/cloud-tvnews/blob/master/iamRoles.md) document.
+Roles that have been created that might be reused should be recorded in [the iamRoles.md](https://github.com/HeardLibrary/cloud-tvnews/blob/master/iamRoles.md) document.
 
 ## Creating Lambdas
 
@@ -56,7 +56,7 @@ Step functions can be created online or using the CLI as with the other items ab
 
 The state machine JSON and a corresponding bash script for creating the step function should be stored in the `stateMachines` directory. 
 
-A screenshot of the state machine diagram should be captured and inserted into the README.md page for the stateMachines directory.
+A screenshot of the state machine diagram should be captured and inserted into the [README.md](https://github.com/HeardLibrary/cloud-tvnews/blob/master/stateMachines/README.md) page for the stateMachines directory.
 
 ----
 Revised 2019-04-22
