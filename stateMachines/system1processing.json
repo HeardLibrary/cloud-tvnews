@@ -1,0 +1,59 @@
+{
+    "Comment": "Includes processing from Snapstream output to output of data to be segmented",
+    "StartAt": "determineDateNetwork",
+    "States": {
+      "determineDateNetwork": {
+          "Type": "Task",
+          "Resource": "arn:aws:lambda:us-east-1:022001073478:function:stateMachinePlaceholder",
+          "ResultPath": "$",
+          "Next": "alreadyExistTest"
+          },
+    "alreadyExistTest": {
+        "Type": "Choice",
+        "Choices": [
+                {
+                "Variable": "$.existence",
+                "StringEquals": "Exists",
+                "Next": "rename"
+                }
+            ],
+        "Default": "calcOverlap"
+      },
+    "calcOverlap": {
+        "Type": "Pass",
+        "ResultPath": "$",
+        "Next": "overlapTest"
+        },
+    "overlapTest": {
+        "Type": "Choice",
+        "Choices": [
+                {
+                "Variable": "$.overlap",
+                "StringEquals": "False",
+                "Next": "rename"
+                }
+            ],
+        "Default": "recycle"
+        },
+    "recycle": {
+        "Type": "Pass",
+        "ResultPath": "$",
+        "End": true
+        },
+    "rename": {
+        "Type": "Pass",
+        "ResultPath": "$",
+        "Next": "mediaConvert"
+        },
+    "mediaConvert": {
+        "Type": "Pass",
+        "ResultPath": "$",
+        "Next": "prepareForSegmentation"
+        },
+    "prepareForSegmentation": {
+        "Type": "Pass",
+        "ResultPath": "$",
+        "End": true
+        }
+    }
+  }

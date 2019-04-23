@@ -1,0 +1,25 @@
+{
+  "source": [
+    "aws.s3"
+  ],
+  "detail-type": [
+    "AWS API Call via CloudTrail"
+  ],
+  "detail": {
+    "eventSource": [
+      "s3.amazonaws.com"
+    ],
+    "eventName": [
+      "PutObject"
+    ],
+    "requestParameters": {
+      "bucketName": [
+        "vu-tvnews-cbs",
+        "vu-tvnews-nbc",
+        "vu-tvnews-abc",
+        "vu-tvnews-cnn",
+        "vu-tvnews-fnc"
+      ]
+    }
+  }
+}
